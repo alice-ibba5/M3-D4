@@ -8,11 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Nym Travel Agency</title>
+
+    <style>
+      html {
+         scroll-behavior: smooth;
+      }
+    </style>
+
   </head>
   <body>
     
-      <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#eae6dd">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color:#eae6dd">
           <a class="navbar-brand" href="#">
             <img src="assets/Logo.jpg" width="50" height="50" class="d-inline-block align-top" alt="">
           </a>
@@ -22,8 +29,8 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
            <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-           <a class="nav-link" href="#">Offerte della settimana</a>
-           <a class="nav-link" href="#">Welcome summer</a>
+           <a class="nav-link" href="#week-deal">Offerte della settimana</a>
+           <a class="nav-link" href="#welcome-summer">Welcome summer</a>
            <a class="nav-link" href="#">Offerta del giorno</a>
            <a class="nav-link" href="#">Last minute</a>
            <a class="nav-link" href="#">Testimonial</a>
@@ -35,25 +42,160 @@
         </form>
       </nav>
 
-      <div class="jumbotron my-5 mx-5" style="background-color:#eae6dd">
-          <h1 class="display-4">Hello, world!</h1>
-          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-          <hr class="my-4">
-          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-      </div>
-
       <div class="container">
-        <div class="row">
-            <div class="card" style="width: 18rem;">
-               <img src="..." class="card-img-top" alt="...">
+
+         <div class="jumbotron my-5 mx-2" style="background-color:#eae6dd">
+           <div class="d-flex align-items-center">            
+            <h1 class="display-4">Nym Travel Agency</h1>
+            <img class="w-25" src="assets/Logo.jpg" alt="">
+           </div>
+            <p class="lead">Feel the Freedom</p>
+            <hr class="my-4">
+            <p>Book your next trip!</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+         </div>
+
+         <section class="mx-2" id="week-deal">
+           <div>
+            <h3>Offerte della settimana</h3>
+           </div>
+           <div class="row">
+             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+               <div class="card">
+                  <img src="assets/hawaii.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                      <h5 class="card-title">Hawaii</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Book this!</a>
+                  </div>
+               </div>
+             </div>
+
+             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+              <div class="card">
+                 <img src="assets/thailand.jpeg" class="card-img-top" alt="...">
+                 <div class="card-body">
+                     <h5 class="card-title">Thailand</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="btn btn-primary">Book this!</a>
+                 </div>
+              </div>
+             </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+              <div class="card">
+                 <img src="assets/iceland.jpg" class="card-img-top" alt="...">
+                 <div class="card-body">
+                     <h5 class="card-title">Iceland</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="btn btn-primary">Book this!</a>
+                 </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-3">
+              <div class="card">
+                 <img src="assets/jordan.jpg" class="card-img-top" alt="...">
+                 <div class="card-body">
+                     <h5 class="card-title">Jordan</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="btn btn-primary">Book this!</a>
+                 </div>
+              </div>
+            </div>
+           </div>
+         </section>
+        
+         <section class="mx-2" id="welcome-summer">
+          <div>
+           <h3>Welcome summer</h3>
+          </div>
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-2 my-3">
+              <div class="card">
+                 <img src="assets/hawaii.jpeg" class="card-img-top" alt="...">
+                 <div class="card-body">
+                   <div class="d-flex align-items-center">
+                     <h5 class="card-title">Hawaii</h5>
+                     <label class="mx-3 mx-lg-3 text-uppercase badge badge-danger">hot</label>
+                    </div>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="btn btn-primary">Book this!</a>
+                 </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-xl-2 my-3">
+             <div class="card">
+                <img src="assets/thailand.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title">Thailand</h5>
+                    <label class="mx-3 mx-lg-3 text-uppercase badge badge-danger">hot</label>
+                  </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Book this!</a>
+                </div>
+             </div>
+            </div>
+
+           <div class="col-12 col-sm-6 col-md-4 col-xl-2 my-3">
+             <div class="card">
+                <img src="assets/iceland.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title">Iceland</h5>
+                    <label class="mx-3 mx-lg-3 text-uppercase badge badge-danger">hot</label>
+                  </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Book this!</a>
+                </div>
+             </div>
+           </div>
+
+           <div class="col-12 col-sm-6 col-md-4 col-xl-2 my-3">
+             <div class="card">
+                <img src="assets/jordan.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <div class="d-flex align-items-center">
+                    <h5 class="card-title">Jordan</h5>
+                    <label class="mx-3 mx-lg-3 text-uppercase badge badge-danger">hot</label>
+                  </div>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Book this!</a>
+                </div>
+             </div>
+           </div>
+
+           <div class="col-12 col-sm-6 col-md-4 col-xl-2 my-3">
+            <div class="card">
+               <img src="assets/hawaii.jpeg" class="card-img-top" alt="...">
                <div class="card-body">
-                   <h5 class="card-title">Card title</h5>
+                 <div class="d-flex align-items-center">
+                   <h5 class="card-title">Hawaii</h5>
+                   <label class="mx-3 mx-lg-3 text-uppercase badge badge-danger">hot</label>
+                 </div>
                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                   <a href="#" class="btn btn-primary">Book this!</a>
+               </div>
+             </div>
+           </div>
+
+           <div class="col-12 col-sm-6 col-md-4 col-xl-2 my-3">
+            <div class="card">
+               <img src="assets/thailand.jpeg" class="card-img-top" alt="...">
+               <div class="card-body">
+                <div class="d-flex align-items-center">
+                  <h5 class="card-title">Thailand</h5>
+                  <label class="mx-3 mx-lg-3 text-uppercase badge badge-danger">hot</label>
+                </div>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Book this!</a>
                </div>
             </div>
-        </div>
+           </div>
+          </div>
+        </section>
       </div>
     
 
